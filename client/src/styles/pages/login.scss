@@ -1,0 +1,82 @@
+.Login {
+  &_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../images/loginBack.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &_box {
+    padding: 1.5rem;
+    background-color: rgba($color: #fff, $alpha: 0.7);
+    width: 40%;
+    border-radius: 0.3rem;
+    @media only screen and (max-width: 1300px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 1300px) {
+      width: 60%;
+    }
+    @media only screen and (max-width: 1000px) {
+      width: 70%;
+    }
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+    }
+    @media only screen and (max-width: 700px) {
+      width: 90%;
+    }
+    @media only screen and (max-width: 650px) {
+      width: 95%;
+    }
+    &-header {
+      text-align: center;
+      img {
+        width: 10rem;
+      }
+      h1 {
+        color: $primary-color;
+        font-size: 3rem;
+      }
+    }
+    &-body {
+      &-inputBox {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        label,
+        input,
+        button {
+          width: 100%;
+          font-size: 1.5rem;
+          outline: none;
+          border-radius: 0.2rem;
+        }
+        label {
+          display: block;
+          margin-bottom: 0.2rem;
+        }
+        input {
+          border: 1px solid $grey-color;
+          padding: 0.5rem;
+        }
+        button {
+          border: none;
+          padding: 0.5rem;
+          font-weight: bold;
+          background: $primary-color;
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+.spinner {
+  animation: rotater 1s linear infinite;
+  font-size: 2rem;
+}

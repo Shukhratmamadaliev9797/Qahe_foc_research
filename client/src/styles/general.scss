@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before,
+*:visited {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: $lightGreen-color !important;
+}
+
+.home {
+  background-color: $white-color;
+}
+.about {
+  background-color: $white-color;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input {
+  outline: none;
+}
+textarea {
+  outline: none;
+}

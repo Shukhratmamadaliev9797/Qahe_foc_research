@@ -1,0 +1,35 @@
+.adminTraining {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 90vh;
+  transition: 0.5s;
+  padding: 2rem;
+  background-color: $lightGreen-color;
+  top: 6rem;
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    input {
+      width: 95%;
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      outline: none;
+      border-radius: 0.5rem;
+    }
+    &-submit {
+      button {
+        width: 100%;
+        border: 1px solid transparent;
+        background: $primary-color;
+        color: $white-color;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+
+  &__box {
+    position: absolute;
+    color: $white-color;
+    width: 25%;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.8rem;
+    transition: 1s;
+    bottom: 3rem;
+    right: 2rem;
+  }
+
+  span {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  &__success {
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(14, 174, 87, 1) 0%,
+      rgba(12, 116, 117, 1) 90%
+    );
+  }
+  &__error {
+    background-image: radial-gradient(
+      circle 685.3px at 47.8% 55.1%,
+      rgba(255, 99, 152, 1) 0%,
+      rgba(251, 213, 149, 1) 90.1%
+    );
+  }
+}

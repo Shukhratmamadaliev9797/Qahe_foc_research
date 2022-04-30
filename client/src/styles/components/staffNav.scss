@@ -1,0 +1,34 @@
+.staff {
+  &__navbar {
+    &-link {
+      color: $white-color !important;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-family: $title-font;
+      margin-right: 1rem;
+    }
+    &-button {
+      color: $white-color !important;
+      font-size: 1.3rem;
+      border: 1px solid #ddd;
+      border-radius: 0.3rem;
+      font-family: $title-font;
+      margin-right: 1rem;
+    }
+    &-container {
+      background-image: $primary-color-gradient;
+      color: $white-color;
+      display: flex;
+      justify-content: space-between;
+      padding: 0rem 2rem;
+    }
+    &-box {
+      display: flex !important;
+      justify-content: space-between !important;
+      width: 100%;
+    }
+    &-logo {
+      width: 6rem;
+    }
+  }
+}

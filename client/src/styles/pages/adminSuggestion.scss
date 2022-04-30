@@ -1,0 +1,10 @@
+.adminSuggestion {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 90vh;
+  transition: 0.5s;
+  padding: 2rem;
+  background-color: $lightGreen-color;
+  top: 6rem;
+}

@@ -1,0 +1,51 @@
+.inputBox {
+  margin-bottom: 1rem;
+  width: 100%;
+  label {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  input,
+  textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+  }
+
+  &-col {
+    &-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &-rightSubmit {
+    text-align: right;
+    button {
+      padding: 0.8rem 2rem;
+      background: $primary-color;
+      color: $white-color;
+      border: 1px solid transparent;
+      border-radius: 0.2rem;
+    }
+  }
+  &-fullButton {
+    width: 100%;
+    margin-top: 1rem;
+    button {
+      width: 100%;
+      padding: 0.8rem 2rem;
+      background: $primary-color;
+      color: $white-color;
+      border: 1px solid transparent;
+      border-radius: 0.2rem;
+    }
+  }
+}

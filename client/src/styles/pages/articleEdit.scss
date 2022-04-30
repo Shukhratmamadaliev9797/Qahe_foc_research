@@ -1,0 +1,88 @@
+.articleEdit {
+  position: relative;
+
+  &__back {
+    position: absolute;
+    font-size: 4rem;
+    left: 1rem;
+    top: -1rem;
+    color: #095169;
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__articleForm {
+    width: 80%;
+    margin: 5rem auto;
+    color: $color-title;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: $white-color;
+    @media only screen and (max-width: 1200px) {
+      width: 90%;
+    }
+    @media only screen and (max-width: 900px) {
+      width: 95%;
+    }
+
+    & > * {
+      margin-bottom: 3rem;
+    }
+    &__title {
+      text-align: center;
+      margin-top: 2rem;
+      h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        @media only screen and (max-width: 900px) {
+          font-size: 3rem;
+        }
+        @media only screen and (max-width: 700px) {
+          font-size: 2.8rem;
+        }
+      }
+      font-family: $font-title;
+    }
+    &__inputBox {
+      width: 90%;
+      margin: 0 auto;
+      @media only screen and (max-width: 700px) {
+        width: 95%;
+      }
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+      }
+      & > * {
+        margin-bottom: 1.5rem;
+      }
+      label {
+        display: block;
+        font-size: 1.5rem;
+        font-family: $font-parag;
+      }
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        font-family: $font-parag;
+      }
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        height: 25vh;
+        font-size: 1.5rem;
+      }
+      button {
+        background: $primary-color;
+        color: $white-color;
+      }
+    }
+  }
+}

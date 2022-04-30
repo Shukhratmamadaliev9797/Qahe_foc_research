@@ -1,0 +1,146 @@
+.blogScreen {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+  &__container {
+    width: 75%;
+    padding: 2rem;
+    margin-right: 3rem;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+      margin: 0rem;
+    }
+  }
+  &__article {
+    margin-bottom: 2rem;
+
+    &-img {
+      margin: 2rem 0;
+      height: 60vh;
+    }
+    &-title {
+      margin-bottom: 2rem;
+      h1 {
+        font-family: $title-font;
+        color: $color-title;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        @media only screen and (max-width: 900px) {
+          font-size: 2rem;
+        }
+      }
+    }
+    &-paragraph {
+      font-size: 2rem;
+      line-height: 1.5;
+      color: $color-parag;
+      @media only screen and (max-width: 900px) {
+        font-size: 1.6rem;
+      }
+      p {
+        font-family: $paragraph-font;
+      }
+    }
+    &-category {
+      font-size: 2rem;
+      color: $color-parag;
+    }
+    &-writer {
+      font-size: 2rem;
+      font-family: $font-title;
+      color: $color-parag;
+    }
+  }
+  &__comment {
+    &-title {
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+    li {
+      margin-bottom: 2rem;
+    }
+    &-user {
+      font-size: 2.2rem;
+      color: $color-title;
+    }
+    &-createTime {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: $color-parag;
+    }
+    &-text {
+      font-size: 2rem;
+      color: $color-parag;
+    }
+    form {
+      label {
+        display: block;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      textarea,
+      button {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  &__topics {
+    padding: 4rem 2rem;
+    width: 30%;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+    &-latest {
+      padding: 2rem 0;
+      h1 {
+        color: $color-title;
+        font-size: 3rem;
+        font-family: $font-title;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          margin: 3rem 0;
+          a {
+            & > * {
+              margin-bottom: 1rem;
+            }
+            h2 {
+              color: $color-title;
+              font-size: 2rem;
+              font-family: $font-title;
+            }
+            p {
+              color: $color-parag;
+              font-size: 1.5rem;
+              font-family: $paragraph-font;
+            }
+            span {
+              color: $color-parag;
+              font-size: 1.3rem;
+            }
+            img {
+              height: 20vh;
+            }
+          }
+        }
+      }
+      img {
+        @media only screen and (max-width: 900px) {
+          width: 100%;
+          height: 40vh;
+        }
+      }
+    }
+  }
+}

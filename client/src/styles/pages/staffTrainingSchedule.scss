@@ -1,0 +1,28 @@
+.staffTraining {
+  position: relative;
+  &__back {
+    position: absolute;
+    font-size: 4rem;
+    left: 1rem;
+    top: 1rem;
+    color: #095169;
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__title {
+    width: 90%;
+    margin: 0% auto;
+    padding-top: 2rem;
+    h1 {
+      font-size: $title-font;
+    }
+    @media only screen and (max-width: 1200px) {
+      width: 98%;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.staffSuggestions {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  &__back {
+    position: absolute;
+    font-size: 4rem;
+    left: 1rem;
+    top: 1rem;
+    color: #095169;
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      background: $primary-color;
+      border-radius: 0.3rem;
+      color: $white-color;
+      border: 1px solid transparent;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+  }
+  &__suggestion {
+    background-color: $white-color;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    &-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        &:nth-child(1) {
+          font-weight: bold;
+          font-size: 1.1rem;
+        }
+        &:nth-child(2) {
+          border: 1px solid #095169;
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+    &-message {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    &-data {
+      color: #ddd;
+    }
+    &-status {
+      border: 1px solid #ddd;
+      padding: 0.5rem 1rem;
+      background: $primary-color;
+      color: $white-color;
+      border-radius: 0.4rem;
+    }
+  }
+}

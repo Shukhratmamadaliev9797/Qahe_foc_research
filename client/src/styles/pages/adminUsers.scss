@@ -1,0 +1,99 @@
+.admin {
+  &__users {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 90vh;
+    transition: 0.5s;
+    padding: 2rem;
+    background-color: $lightGreen-color;
+    top: 6rem;
+
+    &-header {
+      &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.5rem;
+        h1 {
+          font-weight: bold;
+          color: $primary-color;
+          font-size: 2.5rem;
+        }
+        a {
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          background: $primary-color;
+          color: $white-color;
+          font-size: 1.4rem;
+          border-radius: 1.5rem;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          &:hover {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+  &__user {
+    &-img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+table {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: $white-color;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  tr {
+    border-bottom: 1px solid #eee;
+
+    td,
+    th {
+      padding: 1rem 2rem;
+    }
+    th {
+      font-size: 1.3rem;
+    }
+    td {
+      font-size: 1.2rem;
+      img {
+        border-radius: 0.4rem;
+      }
+
+      &:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.5rem;
+        color: $primary-color;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.notCompleted {
+  background-color: #f5d1cd;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10rem;
+  color: #e36e64;
+}
+.userStatus {
+  background-color: #d3ebd3;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10rem;
+  color: #84c987;
+}
+
+.edit-button {
+  cursor: pointer;
+  border: none;
+  color: $primary-color;
+  background-color: transparent;
+}

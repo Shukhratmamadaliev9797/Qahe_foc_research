@@ -1,0 +1,108 @@
+.adminEvent {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 90vh;
+  transition: 0.5s;
+  padding: 2rem;
+  background-color: $lightGreen-color;
+  top: 6rem;
+
+  &__inputBox {
+    &-col1 {
+      width: 100%;
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+      }
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        height: 15vh;
+      }
+    }
+    &-col2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 1rem;
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+  &__card {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 10% 75% 10%;
+    background: $white-color;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    grid-column-gap: 2rem;
+    margin-bottom: 2rem;
+    &-date {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $primary-color;
+      color: $white-color;
+      padding: 1rem 0;
+      border-radius: 0.5rem;
+      span {
+        &:nth-child(1) {
+          font-size: 1rem;
+        }
+        &:nth-child(2) {
+          font-size: 4rem;
+        }
+      }
+    }
+    &-name {
+      font-size: 1.5rem;
+      font-family: $title-font;
+    }
+    &-about {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-family: $font-parag;
+    }
+    &-action {
+      display: flex;
+      flex-direction: column;
+      button {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        font-size: 1.2rem;
+        &:nth-child(1) {
+          border: 1px solid transparent;
+          background: $primary-color;
+          color: $white-color;
+        }
+        &:nth-child(2) {
+          border: 1px solid transparent;
+          background: $red-color;
+          color: $white-color;
+        }
+      }
+    }
+  }
+}

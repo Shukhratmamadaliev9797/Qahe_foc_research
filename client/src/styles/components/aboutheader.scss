@@ -1,0 +1,57 @@
+.AboutHeader {
+  &__container {
+    background: linear-gradient(
+        171.8deg,
+        rgb(9, 81, 105) 0%,
+        rgba(6, 57, 84, 0.5) 1%
+      ),
+      url("../../images/aboutHeader.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $white-color;
+  }
+  &__contentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: $header-font;
+      @media only screen and (max-width: 1000px) {
+        font-size: 6rem;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 5rem;
+      }
+      @media only screen and (max-width: 450px) {
+        font-size: 4rem;
+      }
+      @media only screen and (max-width: 350px) {
+        font-size: 3rem;
+      }
+    }
+    p {
+      font-size: 1.8rem;
+      width: 80%;
+      text-align: center;
+      font-family: $paragraph-font;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.5rem;
+      }
+      @media only screen and (max-width: 350px) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

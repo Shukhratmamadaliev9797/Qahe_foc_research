@@ -1,0 +1,90 @@
+.admin {
+  &__topbarBox {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    transition: 0.5s;
+    padding: 1.5rem 0;
+    background-color: #f2f8ff;
+    &-active {
+      width: calc(100% - 80px);
+      left: 80px;
+    }
+  }
+  &__topbar {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+    &-toggle {
+      position: relative;
+      width: 6rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+    &-search {
+      position: relative;
+      width: 40rem;
+      margin: 0 1rem;
+      label {
+        position: relative;
+        width: 100%;
+        input {
+          width: 100%;
+          height: 4rem;
+          border-radius: 2rem;
+          padding: 0.5rem 2rem;
+          padding-left: 3.5rem;
+          border: none;
+          font-size: 1.5rem;
+          outline: none;
+          background-color: $white-color;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        svg {
+          position: absolute;
+          top: 1.1rem;
+          left: 1rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &-title {
+      h1 {
+        text-transform: uppercase;
+        font-family: $header-font;
+        color: $primary-color;
+      }
+    }
+    &-user {
+      position: relative;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+      span {
+        color: black;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+    }
+  }
+}
